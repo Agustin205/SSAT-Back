@@ -1,0 +1,38 @@
+{
+  "name": "new-ssat",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/hs-sagas/new-ssat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hs-sagas/new-ssat/issues"
+  },
+  "homepage": "https://gitlab.com/hs-sagas/new-ssat#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "connect-history-api-fallback": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "log4js": "^6.9.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.21",
+    "papaparse": "^5.4.1",
+    "parquetjs": "^0.11.2",
+    "sequelize": "^6.32.1",
+    "uuid": "^9.0.0"
+  }
+}

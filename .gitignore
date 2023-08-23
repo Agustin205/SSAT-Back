@@ -1,0 +1,11 @@
+*.log
+node_modules/
+.env
+public/uploads/
+.env example
+Tablas_SAP/
+csvs
+logs.txt
+logsError.txt
+general.js
+src/database/db.js

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>SSAT</title>
+</head>
+<body>
+
+    <div class="arriba">
+        <h1>UserTrack</h1>
+        <h2>Ayuda</h2>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p class="textoModal">Para subir datos simplemente selecciona la carpeta donde contiene todos los archivos en formato tabla a subir.</p>
+        <p class="textoModal">Cabe aclarar que los nombres de los archivos NO deben tener acentos y tampoco espacios en blancos (los mismo deben ser remplazados por "_").</p>
+        <p class="textoModal">Luego de seleccionar la carpeta (y escribir el nombre del cliente que corresponde), simplemente toque el boton de subir y se insertara la información en la BD.</p>          
+        </div>
+    </div>
+    
+    <nav>
+            <a href="/" data-section="data">Import Data</a>
+            <a href="#" data-section="client">Client Settings</a>
+            <a href="/object" data-section="auth">Auth. Object</a>
+            <a href="/transaction" data-section="transaction">Transaction</a>
+    </nav>
+
+    <div id="data" class="data">
+        
+        <form action="/transactionObjetcs" method="post" style='justify-content: center;align-items: center; background-color: #1b1b1b;margin-top: 1%;' class="inputContainers">
+            <container class="autocomplete"  style='margin: 1%;'>
+                <input id='transInput' name="Transaction" placeholder="TRANS">
+            </container>
+            <input id='transList' style="display: none;" value='<%= list %>' />
+            <input type="submit" style='padding: 0;height: 15%;width: 9%;margin:0;font-size: 1em;' class="addContainer" value="Add"/>
+       </form>
+
+        <form id="myForm" style='margin-top: 0;height: auto;font-size: auto;' class='fomulario'action="/objectSearch" method="post" ">  
+            <table class="tab">
+                <thead class="tabHeader">
+                  <tr>
+                   <th>OBJ AUTH</th> 
+                   <th>FIELD</th> 
+                   <th>VALUE FROM</th> 
+                   <th>VALUE TO</th> 
+                   <th>SELECT</th> 
+                </tr>
+                </thead>
+                <tbody>
+                    <% for (let i = 0; i < obj.length; i++) { %>
+                        <tr class="fila">
+                            <td><%= obj[i].objeto %></td>
+                            <td><%= obj[i].campo %></td>
+                            <td><%= obj[i].valorDesde %></td>
+                            <td><%= obj[i].valorHasta %></td>
+                            <td><input type="checkbox" checked></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <input  style='display: none;' name="json" >
+            <input class='boton' type="submit" value="Buscar" />
+        </form>
+
+    </div>
+    <script src="/trsJS.js"></script>
+</body>
+</html>

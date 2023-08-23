@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>SSAT</title>
+</head>
+<body>
+
+    <div class="arriba">
+        <h1>UserTrack</h1>
+        <h2>Ayuda</h2>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p class="textoModal">Para subir datos simplemente selecciona la carpeta donde contiene todos los archivos en formato tabla a subir.</p>
+        <p class="textoModal">Cabe aclarar que los nombres de los archivos NO deben tener acentos y tampoco espacios en blancos (los mismo deben ser remplazados por "_").</p>
+        <p class="textoModal">Luego de seleccionar la carpeta (y escribir el nombre del cliente que corresponde), simplemente toque el boton de subir y se insertara la información en la BD.</p>          
+        </div>
+    </div>
+    
+    <nav>
+            <a href="/" data-section="data">Import Data</a>
+            <a href="#" data-section="client">Client Settings</a>
+            <a href="/object" data-section="auth">Auth. Object</a>
+            <a href="/transaction" data-section="transaction">Transaction</a>
+    </nav>
+
+    <div id="data" class="data">
+
+        <form id='myForm'class="fomulario" action="/objectSearch" method="post">
+          
+            <container class="inputContainers">
+                <input  name="obj" placeholder="OBJETO">
+                <input  name="field" placeholder="CAMPO">
+                <input  name="von" placeholder="Valor desde">
+                <input  name="vot" placeholder="Valor hasta">
+                <input  name="json"style='display:none'>
+            </container>
+
+            <div class="addContainer">
+                Add
+            </div>
+
+            <ul class="containerCondciones">
+            </ul>
+
+            <input class='boton' type="submit" value="Buscar" />
+        </form>
+
+    </div>
+    
+    <script src="/objJS.js"></script>
+</body>
+</html>

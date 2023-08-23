@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>SSAT</title>
+</head>
+<body>
+
+    <% let string = ''
+    for (let i = 0; i < tab.length; i++) {
+        string += tab[i].toString()
+        if (i < tab.length-1) {
+            string += '/'
+        }                   
+    }  %>
+
+    <% if(validacion) {%>
+        <div class="modal2">
+            <div class="modal-content2">
+            <span class="closeBtn2">&times;</span>
+            <% if(tab.length == 0) { %>
+            <p class="textoModal">No hay ningun archivo dentro de la carpeta que sea un nombre de una tabla.</p>
+            <p class="textoModal">Recorda que los nombres de las tablas no deben tener espacios en blancos ni acentos!</p>
+            <% } else { %>
+                <p class="textoModal">Se subieron exitosamente la\s tabla\s: <%= string %></p>
+            <% } %> 
+            </div>
+        </div>
+    
+    <% } %>
+    
+    <div class="arriba">
+        <h1>UserTrack</h1>
+        <h2>Ayuda</h2>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p class="textoModal">Para subir datos simplemente selecciona la carpeta donde contiene todos los archivos en formato tabla a subir.</p>
+        <p class="textoModal">Cabe aclarar que los nombres de los archivos NO deben tener acentos y tampoco espacios en blancos (los mismo deben ser remplazados por "_").</p>
+        <p class="textoModal">Luego de seleccionar la carpeta (y escribir el nombre del cliente que corresponde), simplemente toque el boton de subir y se insertara la información en la BD.</p>          
+        </div>
+    </div>
+    
+    <nav>
+        <a href="/" data-section="data">Import Data</a>
+        <a href="#" data-section="client">Client Settings</a>
+        <a href="/object" data-section="auth">Auth. Object</a>
+        <a href="/transaction" data-section="transaction">Transaction</a>
+    </nav>
+
+    <div id="data" class="data">
+
+        <form class='fomulario' action="/upload" method="post" enctype="multipart/form-data">
+            <br>
+            <input class='client' type="text" name="cliente" placeholder="Cliente">
+            <br>
+            
+            <input  id='fileInput' class = "folder" style="display: none;" type="file" name="folder" webkitdirectory directory multiple>
+            
+            <label  for="fileInput" class="folder">
+                <img src="/icon/folder.svg">
+            </label  for="fileInput">
+            
+            <p class="desc">No hay ninguna carpeta seleccionada</p>
+
+            <input class='boton' type="submit" value="Subir" />
+        </form>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
+

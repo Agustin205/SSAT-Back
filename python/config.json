@@ -1,0 +1,118 @@
+{
+	"tables": [
+		{
+			"name": "usobt_c",
+			"file_name": "usobt_c.txt",
+			"columns": "name,type,object,field,low,high,modifier,moddate,modtime,modified,id_lote,fecha_carga",
+			"qty": 12
+		},
+		{
+			"name": "adrp",
+			"file_name": "adrp.txt",
+			"columns": "client,persnumber,date_from,nation,date_to,title,name_first,name_last,name2,namemiddle,name_last2,name_text,converted,title_aca1,title_aca2,prefix1,prefix2,title_sppl,nickname,initials,nameformat,namcountry,profession,sex,langu,pers_group,flaggroups,sort1,sort2,sort_phn,addr_comp,addr_pers,flperstel,flperscomm,persorigin,mc_namefir,mc_namelas,mc_name2,langu_crea,adrp_uuid,uuid_belated,id_category,adrp_err_status,id_lote,fecha_carga",
+			"qty": 45
+		},
+		{
+			"name": "agr_1251",
+			"file_name": "agr_1251.txt",
+			"columns": "mandt,agr_name,counter,object,auth,variant,field,low,high,modified,deleted,copied,neu,node,id_lote,fecha_carga",
+			"qty": 16
+		},
+		{
+			"name": "agr_prof",
+			"file_name": "agr_prof.txt",
+			"columns": "mandt,agr_name,langu,profile,ptext,id_lote,fecha_carga",
+			"qty": 7
+		},
+		{
+			"name": "agr_users",
+			"file_name": "agr_users.txt",
+			"columns": "mandt,agr_name,uname,from_dat,to_dat,exclude,change_dat,change_tim,change_tst,org_flag,col_flag,id_lote,fecha_carga",
+			"qty": 13
+		},
+		{
+			"name": "t000_des_200",
+			"file_name": "t000_des_200.txt",
+			"columns": "mandante,denominacion,poblacion,moneda_estand,campo_de_texto_longitud_10,rol,conexion_transp,no_indep_mand,protecc_copia,no_upgrade_sap,metodo_bloqueo,creacion_de_sets_de_ce_switch,catt_permitido,bloqueado_temporal,modificado_por,fecha,sistema_logico,id_lote,fecha_carga",
+			"qty": 19
+		},
+		{
+			"name": "t000_des_300",
+			"file_name": "t000_des_300.txt",
+			"columns": "mandante,denominacion,poblacion,moneda_estand,campo_de_texto_longitud_10,rol,conexion_transp,no_indep_mand,protecc_copia,no_upgrade_sap,metodo_bloqueo,creacion_de_sets_de_ce_switch,catt_permitido,bloqueado_temporal,modificado_por,fecha,sistema_logico,id_lote,fecha_carga",
+			"qty": 19
+		},
+		{
+			"name": "t000_pro",
+			"file_name": "t000_pro.txt",
+			"columns": "mandt,mtext,ort01,mwaer,adrnr,cccategory,cccoractiv,ccnocliind,cccopylock,ccnocascad,ccsoftlock,ccorigcont,ccimaildis,cctemplock,changeuser,changedate,logsys,id_lote,fecha_carga",
+			"qty": 19
+		},
+		{
+			"name": "t000_qua",
+			"file_name": "t000_qua.txt",
+			"columns": "mandante,denominacion,poblacion,moneda_estand,campo_de_texto_longitud_10,rol,conexion_transp,no_indep_mand,protecc_copia,no_upgrade_sap,metodo_bloqueo,creacion_de_sets_de_ce_switch,catt_permitido,bloqueado_temporal,modificado_por,fecha,sistema_logico,id_lote,fecha_carga",
+			"qty": 19
+		},
+		{
+			"name": "usr02",
+			"file_name": "usr02.txt",
+			"columns": "mandt,bname,bcode,gltgv,gltgb,ustyp,class,locnt,uflag,accnt,aname,erdat,trdat,ltime,ocod1,bcda1,codv1,ocod2,bcda2,codv2,ocod3,bcda3,codv3,ocod4,bcda4,codv4,ocod5,bcda5,codv5,versn,codvn,tzone,zbvmaster,passcode,pwdchgdate,pwdstate,reserved,pwdhistory,pwdlgndate,pwdsetdate,pwdinitial,pwdlockdate,pwdsaltedhash,security_policy,id_lote,fecha_carga",
+			"qty": 46
+		},
+		{
+			"name": "usr03",
+			"file_name": "usr03.txt",
+			"columns": "mandt,bname,name1,name2,name3,name4,salut,abtlg,kostl,buinr,roonr,stras,pfach,pstlz,ort01,regio,land1,spras,telpr,telnr,tel01,tel02,telx1,telfx,teltx,ort02,pstl2,tzone,id_lote,fecha_carga",
+			"qty": 30
+		},
+		{
+			"name": "usr04",
+			"file_name": "usr04.txt",
+			"columns": "mandt,bname,modda,modti,modbe,nrpro,profs,id_lote,fecha_carga",
+			"qty": 9
+		},
+		{
+			"name": "usr11",
+			"file_name": "usr11.txt",
+			"columns": "mandt,langu,profn,aktps,ptext,id_lote,fecha_carga",
+			"qty": 7
+		},
+		{
+			"name": "usr13",
+			"file_name": "usr13.txt",
+			"columns": "mandt,langu,objct,auth,aktps,atext,id_lote,fecha_carga",
+			"qty": 8
+		},
+		{
+			"name": "usr21",
+			"file_name": "usr21.txt",
+			"columns": "mandt,bname,persnumber,addrnumber,kostl,start_menu,idadtype,bpperson,organization,responsible,techdesc,identity_guid,id_lote,fecha_carga",
+			"qty": 14
+		},
+		{
+			"name": "ust04",
+			"file_name": "ust04.txt",
+			"columns": "mandt,bname,profile,id_lote,fecha_carga",
+			"qty": 5
+		},
+		{
+			"name": "ust10c",
+			"file_name": "ust10c.txt",
+			"columns": "mandt,profn,aktps,subprof,id_lote,fecha_carga",
+			"qty": 6
+		},
+		{
+			"name": "ust10s",
+			"file_name": "ust10s.txt",
+			"columns": "mandt,profn,aktps,objct,auth,id_lote,fecha_carga",
+			"qty": 7
+		},
+		{
+			"name": "ust12",
+			"file_name": "ust12.txt",
+			"columns": "mandt,objct,auth,aktps,field,von,bis,id_lote,fecha_carga",
+			"qty": 9
+		}
+	]
+}
